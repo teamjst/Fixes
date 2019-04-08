@@ -90,8 +90,8 @@ img {
 
 .sectionB {
     position: absolute;
-    left: 53%;
-    transform: translate(-50%,-50%);
+    left: 52%;
+    transform: translate(-50%,-65%);
     font-family: 'Raleway';
     font-weight: 300;
     width: 520px;
@@ -104,7 +104,7 @@ h3 {
     font-family: 'Josefin Sans';
     margin: 0;
     padding: 3px 0 20px;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 2px;
     color: white;
     text-align: center;
@@ -112,25 +112,27 @@ h3 {
     padding-bottom: 40px;
     display: block;
     text-align: right;
+    margin-right: 13px;
     float: left;
 }
 
 .sectionB input {
     font-family: 'Josefin Sans';
     background: rgba(0,0,0,0.25);
-    border: 1px solid white;
+    border: 1.5px solid white;
     color: white;
     padding: 10px;
     text-align: center;
     width: 270px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .sectionB:after {
      content: '>';
     position: absolute;
-    right: 100px;
+    right: 90px;
     top: 48px;
 	width: 0;
 	height: 0;
@@ -139,8 +141,8 @@ h3 {
 
 .sectionC {
     position: absolute;
-    left: 53%;
-    transform: translate(-50%,-50%);
+    left: 52%;
+    transform: translate(-50%,-65%);
     font-family: 'Raleway';
     font-weight: 300;
     width: 520px;
@@ -152,20 +154,21 @@ h3 {
 .sectionC input {
     font-family: 'Josefin Sans';
     background: rgba(0,0,0,0.25);
-    border: 1px solid white;
+    border: 1.5px solid white;
     color: white;
     padding: 10px;
     text-align: center;
     width: 270px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
     margin-left: 24px;
+    cursor: pointer;
 }
 
 .sectionC:after {
      content: '>';
     position: absolute;
-    right: 100px;
+    right: 90px;
     top: 48px;
 	width: 0;
 	height: 0;
@@ -184,17 +187,17 @@ h3 {
 #time {
     color: white;
     background: transparent;
-    border: 1px solid white;
+    border: 1.5px solid white;
     font-size: 17px;
-    font-family: 'Lato';
+    font-family: 'Josefin Sans';
     letter-spacing: 4px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 70px;
     padding-right: 70px;
-    font-weight: 300;
-    min-width: 488px;
-    transform: translate(0%, 100%);
+    font-weight: bold;
+    min-width: 503px;
+    transform: translate(0%, 90%);
     display: inline-block;
     margin-left: 0px;
     text-decoration: none;
@@ -203,4 +206,8 @@ h3 {
 #time:hover, #time:active {
   color:#fff;
   background:rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
+
+
+

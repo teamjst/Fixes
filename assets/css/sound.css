@@ -48,6 +48,8 @@ h1 {
 
 html {
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     -webkit-background-size:cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -59,6 +61,28 @@ html {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+}
+
+
+.button {
+    color: white;
+    background: transparent;
+    border: 1.5px solid white;
+    font-size: 17px;
+    font-family: 'Josefin Sans';
+    letter-spacing: 4px;
+    padding: 11px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 283px;
+    margin-left: 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover, .button:active {
+  color:#fff;
+  background:rgba(0, 0, 0, 0.2);
 }
 
 
@@ -74,6 +98,11 @@ p {
     top: 25px;
     margin-left: 210px;
 }
+
+.spotifyButton {
+    transform: translate(26.45%,250%);
+}
+
 
 
 #wrapper {
@@ -98,14 +127,12 @@ body {
 
 .form-area{
     position: absolute;
-    top: 340px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,10%);
     font-family: 'Raleway';
     font-weight: 300;
     width: 520px;
     color: white;
-    padding: 40px;
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
 }
@@ -114,7 +141,7 @@ h3 {
     font-family: 'Josefin Sans';
     margin: 0;
     padding: 4px 0 20px;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 2px;
     color: white;
     text-align: center;
@@ -129,8 +156,8 @@ h3 {
 .form-area:after {
      content: '>';
     position: absolute;
-    right: 62px;
-    top: 48px;
+    right: 30px;
+    top: 10px;
 	width: 0;
 	height: 0;
 }
@@ -143,14 +170,18 @@ h3 {
     width: 307px;
     height: 40px;
     padding: 10px;
+    padding-left: 75px;
     display: block;
     text-align: right;
     float: left;
+    letter-spacing: 4px;
     background-color: rgba(0,0,0,0.25);
-    border: 1px solid white;
+    border: 1.5px solid white;
     color: white;
+    font-weight: bold;
     font-family: 'Josefin Sans';
     font-size: 17px;
+    cursor: pointer;
 }
 
 .form-area input[type=text],
@@ -236,7 +267,7 @@ h3 {
 .sectionB {
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-30%);
     font-family: 'Raleway';
     font-weight: 300;
     width: 520px;

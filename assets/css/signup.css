@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    overflow-y: hidden;
     -webkit-background-size:cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,7 +31,7 @@ h1 {
 
 .form-area{
     position: absolute;
-    top: 540px;
+    top: 510px;
     left: 50%;
     transform: translate(-50%,-53%);
     font-family: 'Raleway';
@@ -47,7 +48,7 @@ h3 {
     color: white;
     text-align: center;
     font-size: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .column{
@@ -100,6 +101,7 @@ h3 {
 
 }
 
+
 .form-area button[type=submit]:hover,
 .form-area button[type=submit]:active
 {
@@ -137,3 +139,9 @@ label {
     color:#fff;
   background:rgba(0, 0, 0, 0.2);
 }
+
+ul {
+    margin-top: -4px;
+    margin-bottom: -8px;
+}
+
