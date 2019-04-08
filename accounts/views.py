@@ -25,3 +25,10 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', { 'form': form })
+
+def user_homepage(request):
+    username = request.user
+    context = {
+        "Uname": username
+    }
+    return render(request, 'accounts/userhome.html', context)
