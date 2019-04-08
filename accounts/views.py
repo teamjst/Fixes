@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def signup_view(request):
@@ -14,6 +15,7 @@ def signup_view(request):
         form = UserCreationForm()
     return render(request, 'accounts/signup.html', { 'form': form })
 
+@login_required(login_url="/accounts/login")
 def user_homepage(request):
     return render(request, 'accounts/userhome.html')
 
@@ -29,6 +31,7 @@ def login_view(request):
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', { 'form': form })
 
+@login_required(login_url="/accounts/login")
 def user_homepage(request):
     username = request.user
     context = {
