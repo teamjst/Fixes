@@ -7,6 +7,11 @@ h1 {
     font-weight: 200;
 }
 
+.btn{
+    background:rgba(0, 0, 0, 0);
+    border-color:rgba(0, 0, 0, 0);
+}
+
 .fa-chevron-left::before {
     font-size: 64px;
     -webkit-text-stroke: 2px white;
@@ -131,11 +136,11 @@ a {
     width: 215px;
 
 }
-    
+
     #light {
         width: 60px;
     }
-    
+
     h1 {
     font-family: 'Josefin Sans';
     color: white;
@@ -144,8 +149,5 @@ a {
     font-size: 80px;
     font-weight: 200;
 }
-    
+
 }
-
-
-
