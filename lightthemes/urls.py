@@ -21,4 +21,5 @@ app_name = 'lightthemes'
 urlpatterns = [
     path('', views.lighttheme_list, name="lighthome"),
     path('firetheme', views.fire_theme, name="firetheme" ),
+    path('raintheme', views.rain_theme, name="raintheme"),
 ]
