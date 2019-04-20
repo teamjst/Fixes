@@ -8,7 +8,9 @@ def adddevice_view(request):
     if request.method == 'POST':
         form = forms.AddNewDevice(request.POST)
         if form.is_valid():
-            #save article db
+            instance = form.save(commit=False)
+            instance.owner = request.user
+            instance.save()
             return render(request, 'adddevice/adddevice.html')
     else:
         form = forms.AddNewDevice()
