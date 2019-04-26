@@ -16,3 +16,4 @@ def sound_view(request):
         if option == 'Birds Chirping':
             winsound.PlaySound('sound/WavFiles/Birds.wav', winsound.SND_LOOP | winsound.SND_ASYNC)
     return render(request, 'sound/sound.html')
+
