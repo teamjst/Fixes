@@ -30,18 +30,21 @@
 
         <div class="form-area" >
         <h3>Sound Select: &nbsp </h3>
-        <form action="" method="get">
-            <select name="" id="">
-                <option value="">
+        <form name="soundform" action="" method="get" id="soundForm">
+            <select oninput="this.form.submit()" name="sounds" id="sound">
+                <option disabled selected value="None">
+                    Select a sound
+                </option>
+                <option value="Birds Chirping">
                 Birds Chirping
                 </option>
-                <option value="">
+                <option value="Wind Blowing">
                 Wind Blowing
                 </option>
-                <option value="">
+                <option value="Rain Drops">
                 Rain Drops
                 </option>
-                <option value="">
+                <option value="Fire Crackling">
                 Fire Crackling
                 </option>
             </select>
@@ -60,4 +63,7 @@
 
 
     </body>
+
+
 </html>
+
