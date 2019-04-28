@@ -120,6 +120,12 @@ button {
 
 }
 
+.errorlist {
+    display: none;
+    
+}
+
+
 button:hover, button:active {
   color:#fff;
   background:rgba(0, 0, 0, 0.2);
@@ -210,5 +216,21 @@ button:hover, button:active {
   color:#fff;
     cursor: pointer;
   background:rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: none;
+}
+
+input {
+    background: transparent;
+    color: white;
+    border: 1.5px solid white;
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 223px;
 }
 

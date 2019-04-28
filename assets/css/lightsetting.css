@@ -55,8 +55,21 @@ h2 {
 }
 
 .lightToggle {
-    display: inline-block;
-    transform: translate(146%,-15%);
+    position: absolute;
+    left: 52%;
+    transform: translate(-48%,-65%);
+    font-family: 'Raleway';
+    font-weight: 300;
+    width: 520px;
+    color: white;
+    padding: 40px;
+
+}
+
+#fixAlign {
+    position: absolute;
+    left: 52%;
+    transform: translate(-118%,1%);
     font-family: 'Raleway';
     font-weight: 300;
     color: white;
