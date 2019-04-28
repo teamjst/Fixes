@@ -1,0 +1,213 @@
+h1 {
+    font-family: 'Josefin Sans';
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 85px;
+    font-weight: 200;
+}
+
+.fa-chevron-left::before {
+    font-size: 64px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.fa-chevron-left:hover{
+    color: blueviolet;
+    -webkit-text-stroke: 2px blueviolet;
+}
+
+.fa-plus-circle::before{
+    font-size: 64px;
+    -webkit-text-stroke: 2px white;
+    color:transparent;
+}
+
+.header{
+    margin-left: -10px;
+    margin-top: -16px;
+    margin-right: -8px;
+}
+
+
+.nav .menu-bar {
+    text-align: center;
+}
+
+.menu-bar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: -15px 130px;
+    font-size: 25px;
+    font-family: 'Lato';
+    color: white;
+    margin-left: -30px;
+    margin-top: 50px;
+}
+
+
+html {
+    height: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: #007991;  /* fallback for old browsers */
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(#78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.25);
+}
+
+
+p {
+    margin-top: -157px;
+}
+
+.content{
+    margin: 50px auto 0px auto;
+    text-align: center;
+    width: 750px;
+    position: relative;
+    top: 25px;
+    margin-left: 210px;
+}
+
+
+#wrapper {
+    width: 450px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.fix {
+    width: 100%;
+}
+
+
+.sectionB {
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%,-65%);
+    font-family: 'Raleway';
+    font-weight: 300;
+    width: 520px;
+    color: white;
+    padding: 40px;
+    top: 320px;
+}
+
+h3 {
+    font-family: 'Josefin Sans';
+    margin: 0;
+    padding: 3px 0 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 40px;
+    display: block;
+    text-align: right;
+    margin-right: 13px;
+    float: left;
+}
+
+.sectionB input {
+    font-family: 'Josefin Sans';
+    background: rgba(0,0,0,0.25);
+    border: 1.5px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 270px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sectionB:after {
+     content: '>';
+    position: absolute;
+    right: 90px;
+    top: 48px;
+	width: 0;
+	height: 0;
+}
+
+
+.sectionC {
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%,-65%);
+    font-family: 'Raleway';
+    font-weight: 300;
+    width: 520px;
+    color: white;
+    padding: 40px;
+    top: 430px;
+}
+
+.sectionC input {
+    font-family: 'Josefin Sans';
+    background: rgba(0,0,0,0.25);
+    border: 1.5px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 270px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.sectionC:after {
+     content: '>';
+    position: absolute;
+    right: 90px;
+    top: 48px;
+	width: 0;
+	height: 0;
+}
+
+.wickedpicker {
+    width: 292px;
+
+}
+
+
+.sectionC.slide-fade.button::after {
+    content: none;
+}
+
+#time {
+    color: white;
+    background: transparent;
+    border: 1.5px solid white;
+    font-size: 17px;
+    font-family: 'Josefin Sans';
+    letter-spacing: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-weight: bold;
+    min-width: 503px;
+    transform: translate(0%, 90%);
+    display: inline-block;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+#time:hover, #time:active {
+  color:#fff;
+  background:rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+
