@@ -2,8 +2,26 @@ from django.shortcuts import render, redirect
 from yeelight import Bulb
 from yeelight import *
 from django.contrib.auth.decorators import login_required
+from adddevice.models import AddDevice
+from django.contrib.auth.models import User
 
-bulb = Bulb("192.168.0.10")
+@login_required(login_url="/accounts/login")
+def light_on(request):
+    userIP = AddDevice.objects.get(owner=request.user).ip
+    bulb = Bulb(userIP)
+
+    bulb.turn_on()
+
+    return redirect('lightthemes:lighthome')
+
+@login_required(login_url="/accounts/login")
+def light_off(request):
+    userIP = AddDevice.objects.get(owner=request.user).ip
+    bulb = Bulb(userIP)
+
+    bulb.turn_off()
+
+    return redirect('lightthemes:lighthome')
 
 # Create your views here.
 @login_required(login_url="/accounts/login")
@@ -13,13 +31,16 @@ def lighttheme_list(request):
 @login_required(login_url="/accounts/login")
 def fire_theme(request):
 
+    userIP = AddDevice.objects.get(owner=request.user).ip
+    bulb = Bulb(userIP)
+
     transitions = [
     TemperatureTransition(1700, duration=4000),
     TemperatureTransition(6500, duration=4000)
     ]
 
     flow = Flow(
-    count=10,
+    count=50,
     action=Flow.actions.recover,
     transitions=transitions
     )
@@ -30,6 +51,9 @@ def fire_theme(request):
 
 @login_required(login_url="/accounts/login")
 def rain_theme(request):
+
+    userIP = AddDevice.objects.get(owner=request.user).ip
+    bulb = Bulb(userIP)
 
     duration = 1000
     brightness = 100
@@ -46,7 +70,7 @@ def rain_theme(request):
     ]
 
     flow = Flow(
-    count=5,
+    count=50,
     action=Flow.actions.recover,
     transitions=transitions
     )
@@ -57,6 +81,9 @@ def rain_theme(request):
 
 @login_required(login_url="/accounts/login")
 def sun_theme(request):
+
+    userIP = AddDevice.objects.get(owner=request.user).ip
+    bulb = Bulb(userIP)
 
     duration = 1000
     brightness = 100
@@ -71,7 +98,7 @@ def sun_theme(request):
     ]
 
     flow = Flow(
-    count=5,
+    count=50,
     action=Flow.actions.recover,
     transitions=transitions
     )
