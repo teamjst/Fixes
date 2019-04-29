@@ -20,6 +20,7 @@ from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
+    path('social', include('social_django.urls', namespace='social')),
     path('admin/', admin.site.urls),
     path('about/', views.about),
     path('', views.homepage),

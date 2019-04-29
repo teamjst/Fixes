@@ -52,7 +52,7 @@
     </div>
         <div class="spotifyButton">
             <h3>Sync Music: &nbsp</h3>
-        <form method="get" action="spotify"><a href="https://accounts.spotify.com/en/login/?_locale=en-US&continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" class="button">Connect To Spotify</a></form>
+        <form method="get" action="spotify"><a href="{% url "social:begin" "spotify" %}" class="button">Connect To Spotify</a></form>
         </div>
         <div class="sectionB">
         <h3>Volume: &nbsp </h3>
@@ -66,4 +66,3 @@
 
 
 </html>
-
