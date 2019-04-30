@@ -66,7 +66,7 @@ h2 {
 
 }
 
-.fixAlign {
+#fixAlign {
     position: absolute;
     left: 52%;
     transform: translate(-118%,1%);
